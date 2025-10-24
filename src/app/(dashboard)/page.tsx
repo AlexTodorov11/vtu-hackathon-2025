@@ -23,9 +23,6 @@ export default function Home() {
         <Container className="py-4 laptop:col-span-1">
           <TicketByChannels />
         </Container>
-        <Container className="py-4 laptop:col-span-1">
-          <CustomerSatisfication />
-        </Container>
       </div>
     </div>
   );
