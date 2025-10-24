@@ -6,6 +6,7 @@ import {
   TicketByChannels,
 } from "@/components/chart-blocks";
 import Container from "@/components/container";
+import { Calendar } from "@/components/ui/calendar";
 
 export default function Home() {
   return (
@@ -22,6 +23,12 @@ export default function Home() {
       <div className="grid grid-cols-1 divide-y border-b border-border laptop:grid-cols-2 laptop:divide-x laptop:divide-y-0 laptop:divide-border">
         <Container className="py-4 laptop:col-span-1">
           <TicketByChannels />
+        </Container>
+        <Container className="py-4 laptop:col-span-1">
+          <div className="rounded-md border bg-card p-4">
+            <h3 className="mb-2 text-sm font-medium">Calendar</h3>
+            <Calendar />
+          </div>
         </Container>
       </div>
     </div>
